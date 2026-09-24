@@ -1,0 +1,16 @@
+{
+  "name": "terry-ai-demo-sites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three polished static demo websites for the Terry AI web design portfolio.",
+  "type": "module",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:html": "html-validate \"**/*.html\"",
+    "test": "npm run check:links && npm run check:html"
+  },
+  "devDependencies": {
+    "html-validate": "^8.24.0"
+  }
+}
